@@ -9,22 +9,23 @@
     <style>
         /* Styles spécifiques pour agrandir le logo image */
         header .logo img {
-            height: 80px; 
+            height: 80px; /* Augmenté de 60px à 80px pour un logo plus grand */
             width: auto;
             display: block;
-            transition: transform 0.3s ease;
+            transition: transform 0.5s ease; /* Optionnel : petit effet au survol */
         }
         
         header .logo img:hover {
-            transform: scale(1.1); /* Réduit un peu à 1.1 pour éviter que ça ne sorte trop du cadre */
+            transform: scale(1.2); /* Optionnel : le logo grossit légèrement au survol */
         }
         
         .logo-link {
             text-decoration: none;
         }
 
+        /* Ajustement de la navigation si le logo est très grand */
         header {
-            padding: 0px 60px;
+            padding: 0px 60px; /* Réduction du padding vertical pour compenser la taille du logo */
         }
     </style>
 </head>
@@ -33,14 +34,21 @@
 <header>
     <a href="index.html" class="logo-link">
         <div class="logo">
-            <img src="logo.jpg" alt="RetroMovie Logo">
+            <img src="logo.png" alt="RetroMovie Logo">
         </div>
     </a>
-    <nav>
-        <a href="index.html#services">Services</a>
-        <a href="index.html#pricing">Tarifs</a>
-        <a href="index.html#about">À propos</a>
-        <a href="contact.html">Contact</a>
+    
+    <div class="menu-burger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <nav id="nav-links">
+        <a href="index.html#services" onclick="toggleMenu()">Services</a>
+        <a href="index.html#pricing" onclick="toggleMenu()">Tarifs</a>
+        <a href="index.html#about" onclick="toggleMenu()">À propos</a>
+        <a href="contact.html" onclick="toggleMenu()">Contact</a>
     </nav>
 </header>
 

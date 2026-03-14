@@ -19,3 +19,14 @@ document.addEventListener('DOMContentLoaded', function () {
         observer.observe(section);
     });
 });
+
+/* script.js */
+function toggleMenu() {
+    const navLinks = document.getElementById('nav-links');
+    const burgerMenu = document.querySelector('.menu-burger');
+    
+    // Ajoute ou enlève la classe 'active' pour afficher/masquer le menu
+    navLinks.classList.toggle('active');
+    // Ajoute ou enlève la classe 'active' pour animer le bouton burger
+    burgerMenu.classList.toggle('active');
+}

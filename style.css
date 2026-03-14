@@ -206,3 +206,102 @@ footer {
     padding: 0 15px;
     font-size: 16px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------- ADAPTATION MOBILE ------------------------------------- */
+/* --- style.css : Fin du fichier --- */
+
+/* Style du bouton burger (par défaut, invisible sur grand écran) */
+.menu-burger {
+    display: none;
+    cursor: pointer;
+    z-index: 1001; /* Reste au-dessus de tout */
+}
+
+/* --- ADAPTATION MOBILE --- */
+@media (max-width: 768px) {
+    
+    header {
+        flex-direction: row; /* On force le logo et le burger sur la même ligne */
+        padding: 10px 20px;
+        justify-content: space-between;
+    }
+
+    header .logo img {
+        height: 45px; /* Logo encore plus petit sur mobile */
+        margin-bottom: 0;
+    }
+
+    /* Affiche le bouton menu burger */
+    .menu-burger {
+        display: block;
+    }
+
+    /* Le trait central du burger */
+    .menu-burger span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        margin: 6px 0;
+        background-color: white; /* Ou couleur de ton texte sur fond orange */
+        transition: 0.4s; /* Animation douce */
+    }
+
+    /* Masque le menu de navigation par défaut */
+    nav {
+        display: none; 
+        position: absolute;
+        top: 65px; /* Juste en dessous du header */
+        right: 0;
+        width: 100%;
+        height: auto;
+        background-color: #ff7b00; /* Même orange que le header */
+        flex-direction: column;
+        padding: 20px 0;
+        z-index: 1000;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    /* Affiche le menu quand il a la classe 'active' (via JS) */
+    nav.active {
+        display: flex;
+    }
+
+    /* Style des liens dans le menu mobile */
+    nav a {
+        padding: 15px 30px;
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    /* Animation du bouton burger en croix */
+    .menu-burger.active span:nth-child(1) {
+        transform: rotate(-45deg) translate(-8px, 6px);
+    }
+
+    .menu-burger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-burger.active span:nth-child(3) {
+        transform: rotate(45deg) translate(-8px, -6px);
+    }
+}
