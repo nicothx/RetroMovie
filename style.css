@@ -1,5 +1,5 @@
 /* POLICES & BASES */
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -22,7 +22,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 60px;
+    padding: 0px 60px;
     background: #ff7b00;
     position: fixed;
     width: 100%;
@@ -47,6 +47,22 @@ nav a {
 nav a:hover {
     color: #fff;
 }
+
+        /* Styles spécifiques pour agrandir le logo image */
+        header .logo img {
+            height: 80px; /* Augmenté de 60px à 80px pour un logo plus grand */
+            width: auto;
+            display: block;
+            transition: transform 0.5s ease; /* Optionnel : petit effet au survol */
+        }
+        
+        header .logo img:hover {
+            transform: scale(1.2); /* Optionnel : le logo grossit légèrement au survol */
+        }
+        
+        .logo-link {
+            text-decoration: none;
+        }
 
 /* HERO SECTION */
 .hero {
