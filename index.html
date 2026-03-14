@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetroMovie | Numérisation VHS de Qualité</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Styles spécifiques pour agrandir le logo image */
+        header .logo img {
+            height: 80px; /* Augmenté de 60px à 80px pour un logo plus grand */
+            width: auto;
+            display: block;
+            transition: transform 0.5s ease; /* Optionnel : petit effet au survol */
+        }
+        
+        header .logo img:hover {
+            transform: scale(1.2); /* Optionnel : le logo grossit légèrement au survol */
+        }
+        
+        .logo-link {
+            text-decoration: none;
+        }
+
+        /* Ajustement de la navigation si le logo est très grand */
+        header {
+            padding: 0px 60px; /* Réduction du padding vertical pour compenser la taille du logo */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo-link">
+        <div class="logo">
+            <img src="logo.png" alt="RetroMovie Logo">
+        </div>
+    </a>
+    <div class="logo">RetroMovie</div>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#pricing">Tarifs</a>
+        <a href="#about">À propos</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="hero" style="opacity:1; transform:none;">
+    <div class="hero-content">
+        <h1>Redonnez vie à vos souvenirs</h1>
+        <p>Ne laissez pas vos plus beaux souvenirs s'effacer avec le temps. Vos mariages, premiers pas et fêtes de famille méritent de briller à nouveau. Chez RetroMovie, nous transformons vos anciennes cassettes VHS en fichiers HD de haute qualité, pour que vous puissiez redécouvrir et partager ces moments précieux avec vos proches, dès aujourd'hui et pour les générations à venir.</p>
+        <a href="#services" class="btn">Découvrir nos services</a>
+    </div>
+</section>
+
+<section class="services" id="services">
+    <h2>Nos Services</h2>
+    <div class="services-grid">
+        <div class="service">
+            <h3>Numérisation VHS</h3>
+            <p>Transfert de vos cassettes VHS, VHS-C et Hi8 vers clé USB ou lien de téléchargement.</p>
+        </div>
+        <div class="service">
+            <h3>Restauration Vidéo</h3>
+            <p>Amélioration du grain d'image et correction sonore pour une expérience optimale.</p>
+        </div>
+        <div class="service">
+            <h3>Montage Souvenir</h3>
+            <p>Nous créons un film résumé avec vos plus beaux moments et une musique de fond.</p>
+        </div>
+    </div>
+</section>
+
+<hr class="section-divider">
+
+<section class="pricing" id="pricing" style="background: #eee;">
+    <h2>Nos Tarifs</h2>
+    <div class="pricing-grid">
+        <div class="price-card">
+            <h3>À l'unité</h3>
+            <div class="price">20€</div>
+            <p>Par cassette numérisée</p>
+            <p>Format MP4 HD</p>
+        </div>
+        <div class="price-card" style="border: 2px solid #ff7b00;">
+            <h3>Pack</h3>
+            <div class="price">160€</div>
+            <p>Jusqu'à 10 cassettes</p>
+            <p>Clé USB offerte</p>
+        </div>
+        <div class="price-card">
+            <h3>Sur mesure</h3>
+            <div class="price">Devis</div>
+            <p>Plus de 20 cassettes</p>
+            <p>Montage inclus</p>
+        </div>
+    </div>
+</section>
+
+<hr class="section-divider">
+
+<section class="about" id="about">
+    <h2>Comment ça marche ?</h2>
+    <div class="about-content">
+        <p><strong>1. Envoyez vos cassettes :</strong> Préparez votre colis et envoyez-le nous en toute sécurité.</p>
+        <p><strong>2. Numérisation :</strong> Nous traitons vos vidéos avec du matériel professionnel.</p>
+        <p><strong>3. Recevez vos fichiers :</strong> Récupérez vos souvenirs par mail ou sur support physique.</p>
+        
+        <br><br>
+        <a href="contact.html" class="btn">Démarrer mon projet</a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 RetroMovie - Service de numérisation VHS professionnel</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
